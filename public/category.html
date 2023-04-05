@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Website</title>
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <link rel="stylesheet" href="../src/css/fonts.css" />
+  </head>
+  <body bgcolor="#F6F7F9">
+    <!-- <body bgcolor="#555"> -->
+    <!-- web sitre navbar:  -->
+    <nav>
+      <header class="navbar container">
+        <div class="navbar__icon ultra-width">
+          <span class="navbar__profile">
+            <img src="../src/assets/images/profile.svg" alt="" />
+          </span>
+          <div class="list-option">
+            <div>
+              <span class="frame">
+                <img src="../src/assets/images/heart.svg" alt="" />
+              </span>
+              <p>favorites</p>
+            </div>
+            <div>
+              <span class="frame">
+                <img src="../src/assets/images/notification.svg" alt="" />
+              </span>
+              <p>notifications</p>
+            </div>
+            <div>
+              <span class="frame">
+                <img src="../src/assets/images/].svg" alt="" />
+              </span>
+              <p>account settings</p>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__logo">
+          <a href="index.html">MORENT</a>
+        </div>
+        <div class="navbar__icon filter">
+          <span class="navbar__filter">
+            <img src="../src/assets/images/filter.svg" alt="" />
+          </span>
+        </div>
+        <div class="navbar__search">
+          <button class="btn search-icon">Go!</button>
+          <input type="text" placeholder="search here!" id="search-bar" />
+        </div>
+      </header>
+    </nav>
+    <!-- category -->
+    <section class="category-container container">
+      <div class="category-item">
+        <p>TYPE</p>
+        <div class="checkbox-div">
+          <input type="checkbox" name="MUV" id="MUV" />
+          <label for="MUV">MUV</label>
+          <span>7</span>
+        </div>
+        <div class="checkbox-div">
+          <input type="checkbox" name="" id="" />
+          <label for="">MUV</label>
+          <span>7</span>
+        </div>
+        <div class="checkbox-div">
+          <input type="checkbox" name="" id="" />
+          <label for="">MUV</label>
+          <span>7</span>
+        </div>
+        <div class="checkbox-div">
+          <input type="checkbox" name="" id="" />
+          <label for="">MUV</label>
+          <span>7</span>
+        </div>
+        <!--  -->
+        <p>capacity</p>
+        <div class="checkbox-div">
+          <input type="checkbox" name="" id="" />
+          <label for="">MUV</label>
+          <span>7</span>
+        </div>
+        <div class="checkbox-div">
+          <input type="checkbox" name="" id="" />
+          <label for="">MUV</label>
+          <span>7</span>
+        </div>
+        <div class="checkbox-div">
+          <input type="checkbox" name="" id="" />
+          <label for="">MUV</label>
+          <span>7</span>
+        </div>
+        <div class="checkbox-div">
+          <input type="checkbox" name="" id="" />
+          <label for="">MUV</label>
+          <span>7</span>
+        </div>
+        <!--  -->
+        <p>price</p>
+        <div class="range-div">
+          <input type="range" value="5" name="" id="" min="0" max="100" />
+          <p>
+            <!-- content ${max-price} -->
+            Max.$100.00
+          </p>
+        </div>
+      </div>
+      <div class="all-product">
+        <!-- pickup and drop off -->
+        <section class="drop-off container">
+          <div class="drop-child">
+            <div class="drop__title title1">Pick-up</div>
+            <div class="drop__information">
+              <form class="drop--form">
+                <div class="drop--form__child">
+                  <label for="pick-location">Location</label>
+                  <select name="pick-location" id="pick-location">
+                    <option value="mhd">Mashhad</option>
+                    <option value="sry">Sary</option>
+                    <option value="teh">Tehran</option>
+                  </select>
+                </div>
+                <div class="drop--form__child">
+                  <label for="pick-date">Date</label>
+                  <input
+                    type="date"
+                    name="pick-date"
+                    value="2023-02-23"
+                    id="pick-date"
+                  />
+                </div>
+                <div class="drop--form__child">
+                  <label for="pick-time">Time</label>
+                  <input
+                    type="time"
+                    name="pick-time"
+                    id="pick-time"
+                    value="22:00"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <button class="btn btn-primary swap-button">
+            <img src="../src/assets/images/Swap.svg" alt="" />
+          </button>
+          <div class="drop-child">
+            <div class="drop__title">Drop-off</div>
+            <div class="drop__information">
+              <form class="drop--form">
+                <div class="drop--form__child">
+                  <label for="pick-location">Location</label>
+                  <select name="pick-location" id="pick-location">
+                    <option value="mhd">Mashhad</option>
+                    <option value="sry">Sary</option>
+                    <option value="teh">Tehran</option>
+                  </select>
+                </div>
+                <div class="drop--form__child">
+                  <label for="pick-date">Date</label>
+                  <input
+                    type="date"
+                    name="pick-date"
+                    value="2023-02-23"
+                    id="pick-date"
+                  />
+                </div>
+                <div class="drop--form__child">
+                  <label for="pick-time">Time</label>
+                  <input
+                    type="time"
+                    name="pick-time"
+                    value="10:00"
+                    id="pick-time"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- popular car viewer  -->
+        <section class="pop-car container">
+          <div class="pop-title">
+            <span>Popular Car</span>
+            <a href="">view all</a>
+          </div>
+          <div class="pop-cars">
+            <div class="car-product">
+              <div class="car-product__car-name">
+                <p>title</p>
+                <span>♥</span>
+              </div>
+              <div class="car-product__car-model">model</div>
+              <div class="holder">
+                <div class="car-product__image">
+                  <div class="fade"></div>
+                  <img src="../src/assets/images/Car.svg" alt="car-image" />
+                </div>
+                <div class="car-product__info">
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/svg.svg" alt="" />
+                    </span>
+                    <span>80L</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/dande.svg" alt="" />
+                    </span>
+                    <span>manual</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/peaople.svg" alt="" />
+                    </span>
+                    <span>6 People</span>
+                  </p>
+                </div>
+              </div>
+              <div class="car-product__purchase">
+                <span style="font-weight: bolder; font-size: 2rem">
+                  $80.00/</span
+                >
+                <button class="btn btn-primary">Rent Now</button>
+              </div>
+            </div>
+            <div class="car-product">
+              <div class="car-product__car-name">
+                <p>title</p>
+                <span>♥</span>
+              </div>
+              <div class="car-product__car-model">model</div>
+              <div class="holder">
+                <div class="car-product__image">
+                  <div class="fade"></div>
+                  <img src="../src/assets/images/Car.svg" alt="car-image" />
+                </div>
+                <div class="car-product__info">
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/svg.svg" alt="" />
+                    </span>
+                    <span>80L</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/dande.svg" alt="" />
+                    </span>
+                    <span>manual</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/peaople.svg" alt="" />
+                    </span>
+                    <span>6 People</span>
+                  </p>
+                </div>
+              </div>
+              <div class="car-product__purchase">
+                <span style="font-weight: bolder; font-size: 2rem">
+                  $80.00/</span
+                >
+                <button class="btn btn-primary">Rent Now</button>
+              </div>
+            </div>
+            <div class="car-product">
+              <div class="car-product__car-name">
+                <p>title</p>
+                <span>♥</span>
+              </div>
+              <div class="car-product__car-model">model</div>
+              <div class="holder">
+                <div class="car-product__image">
+                  <div class="fade"></div>
+                  <img src="../src/assets/images/Car.svg" alt="car-image" />
+                </div>
+                <div class="car-product__info">
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/svg.svg" alt="" />
+                    </span>
+                    <span>80L</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/dande.svg" alt="" />
+                    </span>
+                    <span>manual</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/peaople.svg" alt="" />
+                    </span>
+                    <span>6 People</span>
+                  </p>
+                </div>
+              </div>
+              <div class="car-product__purchase">
+                <span style="font-weight: bolder; font-size: 2rem">
+                  $80.00/</span
+                >
+                <button class="btn btn-primary">Rent Now</button>
+              </div>
+            </div>
+            <div class="car-product">
+              <div class="car-product__car-name">
+                <p>title</p>
+                <span>♥</span>
+              </div>
+              <div class="car-product__car-model">model</div>
+              <div class="holder">
+                <div class="car-product__image">
+                  <div class="fade"></div>
+                  <img src="../src/assets/images/Car.svg" alt="car-image" />
+                </div>
+                <div class="car-product__info">
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/svg.svg" alt="" />
+                    </span>
+                    <span>80L</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/dande.svg" alt="" />
+                    </span>
+                    <span>manual</span>
+                  </p>
+                  <p class="inline-span">
+                    <span class="span-image">
+                      <img src="../src/assets/images/peaople.svg" alt="" />
+                    </span>
+                    <span>6 People</span>
+                  </p>
+                </div>
+              </div>
+              <div class="car-product__purchase">
+                <span style="font-weight: bolder; font-size: 2rem">
+                  $80.00/</span
+                >
+                <button class="btn btn-primary">Rent Now</button>
+              </div>
+            </div>
+          </div>
+        
+          <div class="show-more-btn">
+            <button class="btn btn-primary">show more</button>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer container">
+        <div class="footer__logo">
+          <div class="logo__img">
+            <img src="../src/assets/images/Logo.svg" alt="" />
+          </div>
+          <span class="footer__solgan">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            illo.
+          </span>
+        </div>
+        <div class="footer__related-links">
+          <div class="relatedlinks-child">
+            <p>About</p>
+            <a href="" class="">How it worked</a>
+            <a href="" class="">Features</a>
+            <a href="" class="">PartnetShip</a>
+            <a href="" class="">Bussiness Relation</a>
+          </div>
+          <div class="relatedlinks-child">
+            <p>Community</p>
+            <a href="" class="">Events</a>
+            <a href="" class="">Blog</a>
+            <a href="" class="">Podcast</a>
+          </div>
+          <div class="relatedlinks-child">
+            <p>Socials</p>
+            <a href="" class="">Discord</a>
+            <a href="" class="">Instagram</a>
+            <a href="" class="">Twitter</a>
+            <a href="" class="">Facebook</a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer__copryright">
+          <div class="copryright__link">
+            <a href="" class="">Privacy</a>
+            <a href="" class="">Term & Condition</a>
+          </div>
+          <span class="copyright"> © 2022 MORENT. All rights reserved </span>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="../src/js/app.js" type="module"></script>
+  </body>
+</html>

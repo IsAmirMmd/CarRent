@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.dn {
+  display: none;
+}
+/* container */
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.display-flex {
+  display: flex;
+}
+/* btn part */
+.btn {
+  font-family: jakartaPlus;
+  outline: 0;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.9rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #3563e9;
+  color: white;
+}
+/* card */
+.car-product {
+  margin: 5rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  /* border: 1px solid #000; */
+  width: 30rem;
+  height: 24rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.car-product__car-name {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+.car-product__car-name p {
+  font-weight: 600;
+}
+.car-product__car-name span {
+  /* color: red; */
+  color: #94a3b8;
+  font-size: 2.5rem;
+}
+.car-product__car-model {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #94a3b8;
+  margin-bottom: 1.6rem;
+}
+.holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.car-product__image {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fade {
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 1%,
+    rgba(255, 0, 0, 0) 100%
+  );
+  height: 100%;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+.car-product__image img {
+  width: 100%;
+}
+.car-product__info {
+  /* height: 88px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inline-span {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #90a3bf;
+}
+
+.span-image {
+  transform: translateY(1px);
+  margin-right: 0.35rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span-image img {
+  width: 100%;
+}
+
+.car-product__purchase {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car-product__purchase span::after {
+  color: #94a3b8;
+  content: "day";
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+/* make web view */
+@media screen and (min-width: 768px) {
+  .car-product {
+    height: 350px;
+  }
+  .car-product__car-name {
+    font-size: 2.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .car-product__image {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .holder {
+    flex-direction: column;
+  }
+  .car-product__info {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  .inline-span {
+    font-size: 1.4rem;
+  }
+  .span-image {
+    width: 24px;
+    height: 24px;
+  }
+  .car-product__purchase {
+    gap: 2rem;
+  }
+  .car-product__purchase .btn-primary {
+    flex-grow: 1;
+  }
+}
+/* navbar */
+.navbar {
+  position: relative;
+  padding: 0.5rem 1rem 0 1rem;
+  max-height: 134px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+.navbar__logo {
+  width: 50%;
+}
+.ultra-width {
+  width: 50%;
+}
+.navbar__icon {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar__profile,
+.navbar__filter {
+  opacity: 0.8;
+  border-radius: 100%;
+  border: 1px solid #c3d4e9;
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  transition: all 0.2s ease-in-out;
+}
+.navbar__profile:hover,
+.frame:hover,
+.navbar__filter:hover {
+  opacity: 1;
+}
+.navbar__profile img,
+.navbar__filter img {
+  width: 24px;
+}
+.btn.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  color: #3563e9;
+  background: transparent;
+}
+.navbar__search {
+  position: relative;
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+#search-bar {
+  outline: none;
+  border: 1px solid #c3d4e9;
+  width: 100%;
+  padding: 1rem;
+  padding-left: 4rem;
+  border-radius: 7rem;
+  transition: all 0.15s ease-in-out;
+}
+#search-bar:focus {
+  border: 1px solid #3563e9;
+  box-shadow: 0px 0px 10px #3563e9;
+}
+.mobile-hidden {
+  display: none;
+}
+.frame {
+  opacity: 0.8;
+  order: 1;
+  border-radius: 100%;
+  border: 1px solid #c3d4e9;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+div.navbar__icon span {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    align-items: center;
+  }
+  .navbar__logo {
+    width: auto;
+    order: 4;
+    margin-right: 4rem;
+  }
+  .navbar__logo img {
+    width: 100%;
+  }
+  .ultra-width {
+    width: auto;
+  }
+  .navbar__search {
+    width: 30%;
+    margin-right: auto;
+    order: 3;
+  }
+  .mobile-hidden,
+  .frame {
+    display: flex;
+  }
+  .navbar__icon.filter {
+    display: none;
+  }
+}
+/* ads */
+.offer.container {
+  max-width: 1340px;
+}
+.offer {
+  padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer-child {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2rem;
+}
+.offer-child img {
+  width: 100%;
+}
+/* drop off */
+.drop-off.container {
+  max-width: 1340px;
+}
+.drop-off {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.drop-child {
+  font-size: 2rem;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 2rem;
+  /* background: #3563e9; */
+}
+.drop--form {
+  display: flex;
+  gap: 2rem;
+}
+.drop--form label {
+  font-weight: 700;
+  display: block;
+  color: #1a202c;
+}
+.drop--form__child > input,
+.drop--form__child > select {
+  padding: 1rem 1rem 1rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #90a3bf;
+  background: transparent;
+  outline: 0;
+  border: none;
+}
+.drop--form__child option {
+  padding: 1rem;
+  font-size: 1.75rem;
+}
