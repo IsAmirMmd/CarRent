@@ -18,11 +18,13 @@
             <img src="../src/assets/images/profile.svg" alt="" />
           </span>
           <div class="list-option">
-            <div>
+            <div class="favorite-badge">
               <span class="frame">
-                <img src="../src/assets/images/heart.svg" alt="" />
+                <a href="favorite.html">
+                  <img src="../src/assets/images/heart.svg" alt="" />
+                </a>
               </span>
-              <p>favorites</p>
+              <span class="red-badge"></span>
             </div>
             <div>
               <span class="frame">
@@ -34,7 +36,8 @@
               <span class="frame">
                 <a href="Dashboard.html">
                   <img src="../src/assets/images/].svg" alt="" />
-                </a>              </span>
+                </a>
+              </span>
               <p>account settings</p>
             </div>
           </div>
@@ -58,23 +61,8 @@
       <div class="category-item">
         <p>TYPE</p>
         <div class="checkbox-div">
-          <input type="checkbox" name="MUV" id="MUV" />
+          <input type="checkbox" id="MUV" />
           <label for="MUV">MUV</label>
-          <span>7</span>
-        </div>
-        <div class="checkbox-div">
-          <input type="checkbox" name="" id="" />
-          <label for="">MUV</label>
-          <span>7</span>
-        </div>
-        <div class="checkbox-div">
-          <input type="checkbox" name="" id="" />
-          <label for="">MUV</label>
-          <span>7</span>
-        </div>
-        <div class="checkbox-div">
-          <input type="checkbox" name="" id="" />
-          <label for="">MUV</label>
           <span>7</span>
         </div>
         <!--  -->
@@ -84,25 +72,10 @@
           <label for="">MUV</label>
           <span>7</span>
         </div>
-        <div class="checkbox-div">
-          <input type="checkbox" name="" id="" />
-          <label for="">MUV</label>
-          <span>7</span>
-        </div>
-        <div class="checkbox-div">
-          <input type="checkbox" name="" id="" />
-          <label for="">MUV</label>
-          <span>7</span>
-        </div>
-        <div class="checkbox-div">
-          <input type="checkbox" name="" id="" />
-          <label for="">MUV</label>
-          <span>7</span>
-        </div>
         <!--  -->
         <p>price</p>
         <div class="range-div">
-          <input type="range" value="5" name="" id="" min="0" max="100" />
+          <input type="range" value="5.00" name="" id="" min="0" max="100" />
           <p>
             <!-- content ${max-price} -->
             Max.$100.00
@@ -184,169 +157,14 @@
         </section>
         <!-- popular car viewer  -->
         <section class="pop-car container">
-          <div class="pop-title">
-            <span>Popular Car</span>
-            <a href="">view all</a>
+          <div class="pop-title"></div>
+          <div class="pop-cars"></div>
+        </section>
+        <section class="rec-car container">
+          <div class="rec-title">
+            <span>recommendation Car</span>
           </div>
-          <div class="pop-cars">
-            <div class="car-product">
-              <div class="car-product__car-name">
-                <p>title</p>
-                <span>♥</span>
-              </div>
-              <div class="car-product__car-model">model</div>
-              <div class="holder">
-                <div class="car-product__image">
-                  <div class="fade"></div>
-                  <img src="../src/assets/images/Car.svg" alt="car-image" />
-                </div>
-                <div class="car-product__info">
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/svg.svg" alt="" />
-                    </span>
-                    <span>80L</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/dande.svg" alt="" />
-                    </span>
-                    <span>manual</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/peaople.svg" alt="" />
-                    </span>
-                    <span>6 People</span>
-                  </p>
-                </div>
-              </div>
-              <div class="car-product__purchase">
-                <span style="font-weight: bolder; font-size: 2rem">
-                  $80.00/</span
-                >
-                <button class="btn btn-primary">Rent Now</button>
-              </div>
-            </div>
-            <div class="car-product">
-              <div class="car-product__car-name">
-                <p>title</p>
-                <span>♥</span>
-              </div>
-              <div class="car-product__car-model">model</div>
-              <div class="holder">
-                <div class="car-product__image">
-                  <div class="fade"></div>
-                  <img src="../src/assets/images/Car.svg" alt="car-image" />
-                </div>
-                <div class="car-product__info">
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/svg.svg" alt="" />
-                    </span>
-                    <span>80L</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/dande.svg" alt="" />
-                    </span>
-                    <span>manual</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/peaople.svg" alt="" />
-                    </span>
-                    <span>6 People</span>
-                  </p>
-                </div>
-              </div>
-              <div class="car-product__purchase">
-                <span style="font-weight: bolder; font-size: 2rem">
-                  $80.00/</span
-                >
-                <button class="btn btn-primary">Rent Now</button>
-              </div>
-            </div>
-            <div class="car-product">
-              <div class="car-product__car-name">
-                <p>title</p>
-                <span>♥</span>
-              </div>
-              <div class="car-product__car-model">model</div>
-              <div class="holder">
-                <div class="car-product__image">
-                  <div class="fade"></div>
-                  <img src="../src/assets/images/Car.svg" alt="car-image" />
-                </div>
-                <div class="car-product__info">
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/svg.svg" alt="" />
-                    </span>
-                    <span>80L</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/dande.svg" alt="" />
-                    </span>
-                    <span>manual</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/peaople.svg" alt="" />
-                    </span>
-                    <span>6 People</span>
-                  </p>
-                </div>
-              </div>
-              <div class="car-product__purchase">
-                <span style="font-weight: bolder; font-size: 2rem">
-                  $80.00/</span
-                >
-                <button class="btn btn-primary">Rent Now</button>
-              </div>
-            </div>
-            <div class="car-product">
-              <div class="car-product__car-name">
-                <p>title</p>
-                <span>♥</span>
-              </div>
-              <div class="car-product__car-model">model</div>
-              <div class="holder">
-                <div class="car-product__image">
-                  <div class="fade"></div>
-                  <img src="../src/assets/images/Car.svg" alt="car-image" />
-                </div>
-                <div class="car-product__info">
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/svg.svg" alt="" />
-                    </span>
-                    <span>80L</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/dande.svg" alt="" />
-                    </span>
-                    <span>manual</span>
-                  </p>
-                  <p class="inline-span">
-                    <span class="span-image">
-                      <img src="../src/assets/images/peaople.svg" alt="" />
-                    </span>
-                    <span>6 People</span>
-                  </p>
-                </div>
-              </div>
-              <div class="car-product__purchase">
-                <span style="font-weight: bolder; font-size: 2rem">
-                  $80.00/</span
-                >
-                <button class="btn btn-primary">Rent Now</button>
-              </div>
-            </div>
-          </div>
-        
+          <div class="rec-cars"></div>
           <div class="show-more-btn">
             <button class="btn btn-primary">show more</button>
           </div>

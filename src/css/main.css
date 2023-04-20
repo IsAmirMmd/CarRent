@@ -46,6 +46,10 @@ input[type="checkbox"] {
 }
 /* btn part */
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   font-family: jakartaPlus;
   outline: 0;
   border: none;
@@ -82,7 +86,6 @@ input[type="checkbox"] {
   font-weight: 600;
 }
 .car-product__car-name span {
-  /* color: red; */
   color: #94a3b8;
   font-size: 2.5rem;
 }
@@ -123,9 +126,10 @@ input[type="checkbox"] {
   width: 100%;
 }
 .car-product__info {
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   justify-content: space-between;
 }
 .inline-span {
@@ -186,6 +190,7 @@ input[type="checkbox"] {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2.5rem;
+    margin-bottom: 0;
   }
   .inline-span {
     font-size: 1.4rem;
@@ -424,7 +429,7 @@ div.navbar__icon span {
 }
 .offer {
   margin-top: 1rem;
-  padding: 2rem 6rem;
+  padding: 2rem 2rem;
   display: flex;
   gap: 5rem;
   justify-content: space-between;
@@ -444,6 +449,11 @@ div.navbar__icon span {
     margin-top: 2rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .offer {
+    padding: 2rem 6rem;
+  }
+}
 /* drop off */
 .drop-off.container {
   max-width: 1340px;
@@ -454,7 +464,7 @@ div.navbar__icon span {
   gap: 2rem 2rem;
   position: relative;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
 }
 .drop-child {
   font-size: 1.5rem;
@@ -591,6 +601,10 @@ div.navbar__icon span {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+}
+.pop-cars.favorite-container {
+  flex-wrap: wrap;
+  overflow-x: hidden;
 }
 .pop-cars::-webkit-scrollbar {
   display: none;
@@ -782,6 +796,23 @@ div.navbar__icon span {
   grid-template-columns: 100%;
   gap: 0.5rem;
 }
+.category-container .pop-car {
+  display: none !important;
+}
+#rangeMax {
+  color: #3d5278;
+  font-size: inherit;
+  font-weight: inherit;
+}
+#rangeMax::after {
+  content: "";
+}
+#rangeMax::before {
+  content: "";
+}
+.all-product .drop-off {
+  padding: 1rem 2rem;
+}
 .all-product {
   box-sizing: border-box !important;
   width: 100%;
@@ -815,6 +846,7 @@ div.navbar__icon span {
   top: 0;
   left: 0;
   opacity: 1;
+  height: 100vh;
   max-height: 100vh;
 }
 .checkbox-div {
@@ -1068,8 +1100,8 @@ div.navbar__icon span {
   font-weight: 700;
 }
 .review-badge-num {
-  font-size: 1.4rem;
-  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   background: #3563e9;
   color: #fff;
@@ -1645,8 +1677,7 @@ div.navbar__icon span {
 .dashboard-page .drop-off {
   flex-direction: column;
 }
-.dashboard-page,
-.drop-off {
+.dashboard-page .drop-off {
   padding: 0;
   gap: 2rem;
 }
@@ -1862,7 +1893,7 @@ div.navbar__icon span {
 }
 /* dashboard sidebar */
 .dashboard-page .category-item p {
-  margin:1rem 0;
+  margin: 1rem 0;
   padding: 0 1rem;
 }
 .dashboard-page .sidebar-item {
@@ -1894,7 +1925,6 @@ div.navbar__icon span {
   line-height: 2.4rem;
   align-items: center;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   display: flex;
 }
 .dashboard-page .category-item .sidebar-item span::after {
@@ -1911,10 +1941,30 @@ div.navbar__icon span {
 .change-theme {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #f6f7f9;
   gap: 1rem;
   padding: 0.25rem;
   margin-left: 3rem;
   justify-content: space-between;
   border-radius: 2rem;
+}
+.add-to-favorite {
+  cursor: pointer;
+}
+.red-heart {
+  color: red !important;
+}
+.favorite-badge {
+  position: relative;
+}
+.red-badge {
+  display: flex;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: transparent;
+  width: 1rem;
+  opacity: 0.9;
+  height: 1rem;
 }

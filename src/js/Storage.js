@@ -1,13 +1,13 @@
 export default class CarInStorage {
   static AllCar() {
-    return [
+    const allCar = [
       {
         id: 1,
         name: "NissanGT-R",
         model: "MUV",
         price: 99,
         gas: 20,
-        person: 6,
+        person: "6",
         steer: "auto",
         image: "../src/assets/images/Car.svg",
       },
@@ -15,19 +15,19 @@ export default class CarInStorage {
         id: 2,
         name: "McLaren",
         model: "Sport Car",
-        price: 80,
+        price: 83,
         gas: 20,
-        person: 6,
+        person: "2",
         steer: "auto",
         image: "../src/assets/images/Koen.png",
       },
       {
         id: 3,
         name: "LamborGini",
-        model: "Sport Car",
+        model: "Auto Car",
         price: 75,
         gas: 20,
-        person: 6,
+        person: "2",
         steer: "manual",
         image: "../src/assets/images/MGZX.png",
       },
@@ -37,7 +37,7 @@ export default class CarInStorage {
         model: "Sport Car",
         price: 65,
         gas: 20,
-        person: 6,
+        person: "4",
         steer: "auto",
         image: "../src/assets/images/RollsRoyce.png",
       },
@@ -47,7 +47,7 @@ export default class CarInStorage {
         model: "MUV",
         price: 99,
         gas: 20,
-        person: 6,
+        person: "6",
         steer: "auto",
         image: "../src/assets/images/Car.svg",
       },
@@ -57,7 +57,7 @@ export default class CarInStorage {
         model: "Sport Car",
         price: 80,
         gas: 20,
-        person: 6,
+        person: "4",
         steer: "auto",
         image: "../src/assets/images/Koen.png",
       },
@@ -67,7 +67,7 @@ export default class CarInStorage {
         model: "Sport Car",
         price: 75,
         gas: 20,
-        person: 6,
+        person: "2",
         steer: "manual",
         image: "../src/assets/images/MGZX.png",
       },
@@ -77,10 +77,19 @@ export default class CarInStorage {
         model: "Travel Car",
         price: 65,
         gas: 20,
-        person: 6,
+        person: "6",
         steer: "auto",
         image: "../src/assets/images/recommand-Car1.png",
       },
     ];
+    return allCar.sort((a, b) => a.name.localeCompare(b.name));
+  }
+  static getFavoriteCar() {
+    const favorite_cars =
+      JSON.parse(localStorage.getItem("favorite-cars")) || [];
+    return favorite_cars;
+  }
+  static setFavoriteCar(array) {
+    localStorage.setItem("favorite-cars", JSON.stringify(array));
   }
 }

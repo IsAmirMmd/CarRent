@@ -4,6 +4,8 @@ import CarInStorage from "./Storage.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   Navbar;
-  ProductUI.showProduct();
-  ProductUI.showAllRecommendedCar()
+  CarInStorage.getFavoriteCar();
+  ProductUI.showProduct(CarInStorage.AllCar());
+  ProductUI.showAllRecommendedCar(CarInStorage.AllCar());
+  ProductUI.favoriteBadge();
 });
