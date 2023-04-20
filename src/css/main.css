@@ -102,6 +102,7 @@ input[type="checkbox"] {
 .car-product__image {
   position: relative;
   width: 70%;
+  height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,7 +123,6 @@ input[type="checkbox"] {
   width: 100%;
 }
 .car-product__info {
-  /* height: 88px; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -155,9 +155,12 @@ input[type="checkbox"] {
   justify-content: space-between;
   align-items: center;
 }
+.car-product__purchase span::before {
+  /* content: "$"; */
+}
 .car-product__purchase span::after {
   color: #94a3b8;
-  content: "day";
+  content: "/ day";
   font-weight: 400;
   font-size: 1.4rem;
 }
