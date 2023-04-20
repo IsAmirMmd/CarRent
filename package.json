@@ -1,10 +1,6 @@
 {
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.3",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.2.7"
+    "autoprefixer": "^10.4.14"
   },
   "name": "carrent",
   "version": "1.0.0",
@@ -76,7 +72,6 @@
     "yaml": "^1.10.2"
   },
   "scripts": {
-    "dev": "postcss ./src/css/main.css -o ./public/build/tailwind.css --watch"
   },
   "keywords": [],
   "author": "IsAmirMmmd",
