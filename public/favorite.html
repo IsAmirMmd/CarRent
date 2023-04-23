@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Website</title>
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <link rel="stylesheet" href="../src/css/fonts.css" />
+  </head>
+  <body bgcolor="#F6F7F9">
+    <!-- <body bgcolor="#555"> -->
+    <!-- web sitre navbar:  -->
+    <nav>
+      <header class="navbar container">
+        <div class="navbar__icon ultra-width">
+          <span class="navbar__profile">
+            <a href="./Dashboard.html">
+              <img src="../src/assets/images/profile.svg" alt="" />
+            </a>
+          </span>
+          <div class="list-option">
+            <div class="favorite-badge">
+              <span class="frame">
+                <a href="favorite.html">
+                  <img src="../src/assets/images/heart.svg" alt="" />
+                </a>
+              </span>
+              <span class="red-badge"></span>
+            </div>
+            <div>
+              <span class="frame">
+                <img src="../src/assets/images/notification.svg" alt="" />
+              </span>
+              <p>notifications</p>
+            </div>
+            <div>
+              <span class="frame">
+                <a href="Dashboard.html">
+                  <img src="../src/assets/images/].svg" alt="" />
+                </a>
+              </span>
+              <p>account settings</p>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__logo">
+          <a href="index.html">MORENT</a>
+        </div>
+        <div class="navbar__icon filter">
+          <span class="navbar__filter">
+            <a href="category.html">
+              <img src="../src/assets/images/filter.svg" alt="" />
+            </a>
+          </span>
+        </div>
+        <div class="navbar__search">
+          <button class="btn search-icon">Go!</button>
+          <input type="text" placeholder="search here!" id="search-bar" />
+        </div>
+      </header>
+    </nav>
+    <!-- ADS AND BADGES -->
+    <section class="offer container">
+      <div class="offer-child">
+        <img src="../src/assets/images/ads1.png" alt="" />
+      </div>
+      <div class="offer-child mobile-hidden">
+        <img class="" src="../src/assets/images/ads2.png" alt="" />
+      </div>
+    </section>
+
+    <!-- favorite car viewer  -->
+    <section class="pop-car container">
+      <div class="pop-title">
+        <span>Favorite Cars</span>
+      </div>
+      <div class="pop-cars favorite-container"></div>
+    </section>
+    <!-- result -->
+    <section class="rec-car container">
+      <div class="rec-title">
+        <span></span>
+      </div>
+      <div class="rec-cars"></div>
+      <div class="show-more-btn">
+        <a href="./category.html" class="btn btn-primary">show more</a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer container">
+        <div class="footer__logo">
+          <div class="logo__img">
+            <img src="../src/assets/images/Logo.svg" alt="" />
+          </div>
+          <span class="footer__solgan">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            illo.
+          </span>
+        </div>
+        <div class="footer__related-links">
+          <div class="relatedlinks-child">
+            <p>About</p>
+            <a href="" class="">How it worked</a>
+            <a href="" class="">Features</a>
+            <a href="" class="">PartnetShip</a>
+            <a href="" class="">Bussiness Relation</a>
+          </div>
+          <div class="relatedlinks-child">
+            <p>Community</p>
+            <a href="" class="">Events</a>
+            <a href="" class="">Blog</a>
+            <a href="" class="">Podcast</a>
+          </div>
+          <div class="relatedlinks-child">
+            <p>Socials</p>
+            <a href="" class="">Discord</a>
+            <a href="" class="">Instagram</a>
+            <a href="" class="">Twitter</a>
+            <a href="" class="">Facebook</a>
+          </div>
+        </div>
+        <hr />
+        <div class="footer__copryright">
+          <div class="copryright__link">
+            <a href="" class="">Privacy</a>
+            <a href="" class="">Term & Condition</a>
+          </div>
+          <span class="copyright"> © 2022 MORENT. All rights reserved </span>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="../src/js/favorite.js" type="module"></script>
+  </body>
+</html>
