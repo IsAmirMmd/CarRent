@@ -315,6 +315,7 @@ class ProductUI {
     // ---------------------------
     favoriteBtn.forEach((item) => {
       const ID = item.dataset.id;
+      
       const favoritedCars = CarInStorage.getFavoriteCar();
       let IsFave = favoritedCars.find((c) => c.id == ID);
       if (IsFave) {
